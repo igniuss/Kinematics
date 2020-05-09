@@ -1,5 +1,5 @@
 #######################################
-# Syntax Coloring Map For AccelStepper
+# Syntax Coloring Map For Kinematics
 #######################################
 
 #######################################
