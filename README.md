@@ -24,37 +24,37 @@ Make sure that everything works before trying other things.
 The toolkit provides easy to use functions to control the kinematics of the robot
 
     * Create a kinematics object by passing the lengths of the joints as parameters:
-    ```
-    Kinematics k(15, 10);
-    ```
+        ```
+        Kinematics k(15, 10);
+        ```
     * To move the motors to desired angles use: (90, -90, and 45 refer to theta1, theta2 and theta3 respectively)
-    ```
-    k.moveToAngle(90, -90, 45);
-    ```
+        ```
+        k.moveToAngle(90, -90, 45);
+        ```
     * To move the end effector to a desired position use: (8, 12 and 6 refer to the x, y and z coordinates)
-    ```
-    k.moveToPosition(8, 12, 6);
-    ```
+        ```
+        k.moveToPosition(8, 12, 6);
+        ```
     * The library also provides the functions `k.printPosition();` and `k.printAngles();` that print the current position of the end effector and the currrent angles of the motors into the serial monitor.
     * Two new datatypes are also created to store the position and angles. 
-    ```c
-    Position p;
-    Angle a;
-    ```
-    The variable `p` will store the x, y, z position of the end effector and `a` will store the angles theta1, theta2, theta3 and these values can be accessed using the dot operator
-    ```c
-    float x = p.x;
-    float y = p.y;
-    float z = p.z;
-    
-    float theta1 = a.theta1;
-    float theta2 = a.theta2;
-    float theta3 = a.theta3;
-    ```
+        ```c
+        Position p;
+        Angle a;
+        ```
+        The variable `p` will store the x, y, z position of the end effector and `a` will store the angles theta1, theta2, theta3 and          these values can be accessed using the dot operator
+        ```c
+        float x = p.x;
+        float y = p.y;
+        float z = p.z;
+        
+        float theta1 = a.theta1;
+        float theta2 = a.theta2;
+        float theta3 = a.theta3;
+        ```
     * Finally the functions `k.getPositions()` and `k.getAngles();` return a Position datatype that contains the current position and an Angle datatype that contains the current angles.
-    ```c
-    Position p = k.getPositions()
-    Angle a = k.getAngles()
-    ```
+        ```
+        Position p = k.getPositions();
+        Angle a = k.getAngles();
+        ```
     
     
