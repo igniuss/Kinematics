@@ -20,7 +20,13 @@ Make sure that everything works before trying other things.
     * Compile the program and upload it
     * Open the Serial Monitor
     * And make sure you get the right messages (the comments on the code say what to expect)
-3. **Useful Functions:**
+3. **Using:**
+    * To include the library in your project, go to `Sketch > Include Library > Kinematics`
+    * Alternatively you can type the following at the top of your code
+    ```c
+    #include <Kinematics.h>
+    ```
+4. **Useful Functions:**
 The toolkit provides easy to use functions to control the kinematics of the robot
 
     * Create a kinematics object by passing the lengths of the joints as parameters:
