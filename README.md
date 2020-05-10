@@ -9,7 +9,7 @@ This toolkit allows the user to control the translational position of the end ef
 
 ## How to use:
 1. **Installing:**
-First you need to important the library into the Arduino IDE.
+First you need to import the library into the Arduino IDE.
     * Open up the Arduino IDE
     * Download this repository
     * Go to `Sketch > Include Library > Add .ZIP Library` 
