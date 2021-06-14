@@ -18,7 +18,7 @@ typedef struct angle Angle;
 
 class Kinematics{
   private:
-    int l1, l2;
+    float l1, l2;
     Position currentPositions;
     Angle currentAngles;
     
