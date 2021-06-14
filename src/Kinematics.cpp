@@ -49,9 +49,9 @@ void Kinematics::moveToAngle(float theta1, float theta2, float theta3){
 void Kinematics::moveToPosition(float x, float y, float z){
   float xPrime = sqrt(pow(x, 2) + pow(y, 2));
   
-  float theta3 = degrees(atan(y/x));
-  float theta2 = -degrees(acos((pow(xPrime, 2) + pow(z, 2) - pow(l1, 2) - pow(l2, 2))/(2 * l1 * l2)));
-  float theta1 = degrees(atan(z/xPrime) - atan((l2 * sin(radians(theta2)))/(l1 + l2 * cos(radians(theta2)))));
+  float theta3 = degrees(atan2(y/x));
+  float theta2 = degrees(acos((pow(xPrime, 2) + pow(z, 2) - pow(l1, 2) - pow(l2, 2))/(2 * l1 * l2)));
+  float theta1 = degrees(atan2(xPrime, z) - atan2((l2 * sin(radians(theta2))), (l1 + l2 * cos(radians(theta2)))));
   
   currentAngles = updateAngles(theta1, theta2, theta3);
   currentPositions = updatePositions(x, y, z);
